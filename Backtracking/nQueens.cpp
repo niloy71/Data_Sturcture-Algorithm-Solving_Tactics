@@ -4,6 +4,14 @@ using namespace std;
 
 int Queens[10000], n;
 
+void printQueens()
+{
+    for(int q = 0; q < n; q++){
+        printf("%d ", Queens[q]);
+    }
+    printf("\n");
+}
+
 bool placed(int k, int i)
 {
     for(int j = 0; j < k; j++){
@@ -20,10 +28,7 @@ void nQueens(int k)
         if(placed(k,i)){
             Queens[k] = i;
             if(k == n-1){
-                for(int q = 0; q < n; q++){
-                    printf("%d ", Queens[q]);
-                }
-                printf("\n");
+                printQueens();
             }
             else{
                 nQueens(k+1);
