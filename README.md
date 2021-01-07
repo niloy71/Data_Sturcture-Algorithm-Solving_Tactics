@@ -1,1 +1,1 @@
-# Data_Sturcture-Algorithm-and-problem_solving_tactics
+Collaction of Genarel code of Data_Sturcture, Algorithm and some problem solving tactics
