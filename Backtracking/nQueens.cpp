@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int Queens[100], ara[100][100], n;
+int Queens[10000], n;
 
 bool placed(int k, int i)
 {
@@ -34,8 +34,6 @@ void nQueens(int k)
 
 int main()
 {
-    int i, j;
-
     while(scanf("%d", &n) && n){
         nQueens(0);
     }
